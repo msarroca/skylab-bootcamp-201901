@@ -100,12 +100,12 @@ app.post('/login', formBodyParser, (req, res) => {
             .catch(({ message }) => {
                 feedback = message
 
-                res.redirect('/register')
+                res.redirect('/login')
             })
     } catch ({ message }) {
         feedback = message
 
-        res.redirect('/register')
+        res.redirect('/login')
     }
 })
 
